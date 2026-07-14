@@ -1053,42 +1053,76 @@
             .nav-toggle {
                 display: flex;
             }
-            .hero-upper {
+            .logo img {
+                height: 4.25rem !important;
+            }
+            .nav-menu.open {
+                top: 6.25rem;
+            }
+            .hero-columns {
                 grid-template-columns: 1fr;
-                gap: 2rem;
+                gap: 2.5rem;
                 text-align: center;
+            }
+            .hero-ctas {
+                justify-content: center;
+            }
+            .hero-pills {
+                justify-content: center;
             }
             .hero-tagline {
                 margin: 0 auto 1.25rem auto;
             }
             .hero h1 {
-                font-size: 2.5rem;
-            }
-            .hero-right-circle {
-                justify-content: center;
-            }
-            .hero-lower {
-                grid-template-columns: 1fr;
-                gap: 1.5rem;
-            }
-            .hero-image-wrapper {
-                aspect-ratio: 16/9;
-            }
-            .stats-block {
-                padding: 2rem;
-                gap: 1.5rem;
-            }
-            .stat-number {
                 font-size: 2.25rem;
+                line-height: 1.2;
+            }
+            .hero-image-card {
+                aspect-ratio: 16/9;
+                max-width: 500px;
+                margin: 0 auto;
+            }
+            .hero-stats-panel {
+                grid-template-columns: 1fr 1fr;
+                gap: 1rem;
+                max-width: 500px;
+                margin: 0 auto;
+            }
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+                text-align: center;
+            }
+            .about-left-header {
+                text-align: center;
+            }
+            .about-left-header p {
+                margin-bottom: 1.5rem;
+            }
+            .about-right-card {
+                padding: 2.5rem 1.5rem;
+                text-align: center;
+            }
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .service-card-content {
+                padding: 1.75rem 1.25rem;
+            }
+            .service-card p {
+                text-align: left;
+                margin-bottom: 1.5rem;
             }
             .methodology-header {
                 flex-direction: column;
-                align-items: flex-start;
+                align-items: center;
+                text-align: center;
                 gap: 1.5rem;
             }
             .methodology-timeline {
                 grid-template-columns: 1fr;
-                gap: 2.5rem;
+                gap: 2rem;
             }
             .methodology-timeline::before {
                 display: none;
@@ -1096,9 +1130,22 @@
             .timeline-arrow {
                 display: none;
             }
+            .timeline-step {
+                text-align: center;
+            }
             .footer-grid {
                 grid-template-columns: 1fr;
                 gap: 2.5rem;
+                text-align: center;
+            }
+            .footer-info {
+                align-items: center;
+            }
+            .footer-logo {
+                margin: 0 auto 1.5rem auto;
+            }
+            .footer-nav {
+                justify-content: center;
             }
             .cta-container h2 {
                 font-size: 2.25rem;
@@ -1107,7 +1154,7 @@
                 font-size: 2rem;
             }
             .section-padding {
-                padding: 4.5rem 0;
+                padding: 3.5rem 0;
             }
         }
     </style>

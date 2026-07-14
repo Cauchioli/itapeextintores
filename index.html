@@ -1,0 +1,1576 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itape Extintores — Prevenção contra Incêndio e Engenharia de Segurança</title>
+    <meta name="description" content="Especialistas em venda e recarga de extintores, projetos de AVCB, treinamentos de brigada de incêndio e laudos de SST para indústrias, comércios e condomínios em Itapetininga e região.">
+    <meta name="keywords" content="extintores Itapetininga, recarga de extintores, projeto AVCB, laudo de estanqueidade, brigada de incêndio, e-Social SST, segurança contra incêndio">
+    <meta name="robots" content="index, follow">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="./favicon.png">
+    <link rel="shortcut icon" type="image/png" href="./favicon.png">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.itapeextintores.com.br/">
+    <meta property="og:title" content="Itape Extintores — Engenharia de Incêndio e Segurança Corporativa">
+    <meta property="og:description" content="Venda e recarga de extintores, regularização de AVCB e assessoria completa em segurança do trabalho com frota local própria em Itapetininga e região.">
+    <meta property="og:image" content="./logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Stylesheet -->
+    <style>
+        :root {
+            --color-primary: #D32F2F; /* Vermelho Fogo */
+            --color-primary-hover: #B71C1C;
+            --color-secondary: #0F172A; /* Marinho Profundo */
+            --color-accent: #EA580C; /* Laranja Corporativo */
+            --color-accent-light: rgba(234, 88, 12, 0.08);
+            --color-text: #334155; /* Slate */
+            --color-text-light: #64748B;
+            --color-bg-light: #F8FAFC;
+            --color-bg-white: #FFFFFF;
+            --color-border: #E2E8F0;
+            
+            --gradient-fire: linear-gradient(135deg, #D32F2F 0%, #EA580C 50%, #F59E0B 100%);
+            --gradient-dark: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+            
+            --font-title: 'Outfit', sans-serif;
+            --font-body: 'DM Sans', sans-serif;
+            
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--color-text);
+            background-color: var(--color-bg-light);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: var(--font-title);
+            color: var(--color-secondary);
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Container */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Utility Components */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.875rem 2.25rem;
+            border-radius: 50px;
+            font-family: var(--font-title);
+            font-weight: 700;
+            font-size: 0.95rem;
+            border: 2px solid transparent;
+            cursor: pointer;
+            transition: var(--transition);
+            gap: 0.6rem;
+        }
+
+        .btn svg {
+            display: inline-block;
+            vertical-align: middle;
+            flex-shrink: 0;
+            transition: var(--transition);
+        }
+
+        .btn:hover svg {
+            transform: translateX(4px);
+        }
+
+        .btn-primary {
+            background-color: var(--color-primary);
+            color: var(--color-bg-white);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--color-primary-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -10px rgba(211, 47, 47, 0.45);
+        }
+
+        .btn-secondary {
+            background-color: var(--color-accent);
+            color: var(--color-bg-white);
+        }
+
+        .btn-secondary:hover {
+            background-color: #d97706;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -10px rgba(234, 88, 12, 0.4);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border-color: var(--color-border);
+            color: var(--color-secondary);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--color-secondary);
+            background-color: rgba(15, 23, 42, 0.02);
+            transform: translateY(-2px);
+        }
+
+        .text-center { text-align: center; }
+        
+        .section-padding {
+            padding: 7rem 0;
+        }
+
+        /* Top Bar Extra-Header */
+        .top-bar {
+            background-color: #0b111e;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.85rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 0.5rem 0;
+        }
+
+        .top-bar-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .top-bar-info {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .top-bar-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .top-bar-item svg {
+            fill: var(--color-primary);
+        }
+
+        .top-bar-socials {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .top-bar-socials a:hover {
+            color: var(--color-accent);
+        }
+
+        /* Header / Navbar */
+        .header {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--color-border);
+            box-shadow: 0 4px 20px -10px rgba(0,0,0,0.03);
+            transition: var(--transition);
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 8rem;
+        }
+
+        .logo {
+            height: 6rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 100%;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2.25rem;
+            align-items: center;
+        }
+
+        .nav-link {
+            font-family: var(--font-title);
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: var(--color-secondary);
+            position: relative;
+            padding: 0.5rem 0;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--color-primary);
+            transition: var(--transition);
+        }
+
+        .nav-link:hover {
+            color: var(--color-primary);
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 1.8rem;
+            height: 1.2rem;
+            cursor: pointer;
+        }
+
+        .nav-toggle span {
+            width: 100%;
+            height: 2px;
+            background-color: var(--color-secondary);
+            transition: var(--transition);
+        }
+
+        /* Hero Section (Estilo Conztru) */
+        .hero {
+            background-color: #F8FAFC;
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .hero-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 3.5rem;
+        }
+
+        .hero-upper {
+            display: grid;
+            grid-template-columns: 1.3fr 0.7fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-tagline {
+            display: inline-flex;
+            align-items: center;
+            border-left: 3px solid var(--color-accent);
+            padding-left: 0.75rem;
+            color: var(--color-text-light);
+            font-family: var(--font-title);
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 1.25rem;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            line-height: 1.15;
+            letter-spacing: -0.02em;
+            color: var(--color-secondary);
+            margin-bottom: 1.5rem;
+        }
+
+        .hero h1 span {
+            color: var(--color-primary);
+            position: relative;
+        }
+
+        .hero-pills {
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .hero-pill {
+            background-color: var(--color-bg-white);
+            border: 1px solid var(--color-border);
+            padding: 0.5rem 1.25rem;
+            border-radius: 50px;
+            font-family: var(--font-title);
+            font-weight: 600;
+            font-size: 0.875rem;
+            color: var(--color-secondary);
+            transition: var(--transition);
+        }
+
+        .hero-pill:hover {
+            border-color: var(--color-primary);
+            color: var(--color-primary);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+        }
+
+        .hero-columns {
+            display: grid;
+            grid-template-columns: 1.15fr 0.85fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-left {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .hero-right {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .hero-ctas {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .hero-image-card {
+            position: relative;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 20px 45px rgba(0,0,0,0.08);
+            aspect-ratio: 4/3;
+        }
+
+        .hero-image-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-image-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(15, 23, 42, 0.4) 0%, transparent 100%);
+        }
+
+        .hero-img-badge {
+            position: absolute;
+            top: 1.5rem;
+            left: 1.5rem;
+            background-color: var(--color-bg-white);
+            color: var(--color-secondary);
+            font-family: var(--font-title);
+            font-weight: 700;
+            font-size: 0.85rem;
+            padding: 0.6rem 1.2rem;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+            z-index: 2;
+        }
+
+        .hero-stats-panel {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.25rem;
+        }
+
+        .hero-stat-box {
+            background-color: var(--color-bg-white);
+            border: 1px solid var(--color-border);
+            border-radius: 16px;
+            padding: 1.25rem;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.02);
+            transition: var(--transition);
+        }
+
+        .hero-stat-box:hover {
+            border-color: var(--color-primary);
+            transform: translateY(-2px);
+        }
+
+        .h-stat-num {
+            display: block;
+            font-family: var(--font-title);
+            font-size: 2.25rem;
+            font-weight: 850;
+            color: var(--color-primary);
+            line-height: 1.1;
+            margin-bottom: 0.25rem;
+        }
+
+        .h-stat-txt {
+            display: block;
+            font-size: 0.85rem;
+            color: var(--color-text-light);
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        /* Quem Somos Section (Estilo Conztru Imagem 3) */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4.5rem;
+            align-items: center;
+        }
+
+        .about-left-header h2 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .about-left-header p {
+            color: var(--color-text-light);
+            font-size: 1.1rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .about-left-visual {
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.04);
+        }
+
+        .about-left-visual img {
+            border-radius: 16px;
+        }
+
+        .about-tag-overlay {
+            position: absolute;
+            bottom: 2rem;
+            left: 2rem;
+            background-color: var(--color-accent);
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            font-family: var(--font-title);
+            font-weight: 700;
+            font-size: 0.9rem;
+            box-shadow: 0 10px 20px rgba(234, 88, 12, 0.3);
+        }
+
+        .about-right-card {
+            background-color: #0b111e !important;
+            background-image: radial-gradient(rgba(255,255,255,0.02) 1px, transparent 1px) !important;
+            background-size: 20px 20px !important;
+            border-radius: 24px;
+            padding: 3.5rem 3rem;
+            color: #ffffff !important;
+            box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.25);
+        }
+
+        .about-right-card h3 {
+            color: #ffffff !important;
+            font-size: 1.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .about-right-card p {
+            color: rgba(255, 255, 255, 0.8) !important;
+            font-size: 1rem;
+            line-height: 1.7;
+            margin-bottom: 2.5rem;
+        }
+
+        /* Services Section (Estilo Conztru Imagem 4) */
+        .services {
+            background-color: var(--color-bg-white);
+            border-top: 1px solid var(--color-border);
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.75rem;
+        }
+
+        .service-card {
+            background-color: var(--color-bg-light);
+            border: 1px solid var(--color-border);
+            border-radius: 20px;
+            overflow: hidden;
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.01);
+        }
+
+        .service-card-img-wrapper {
+            position: relative;
+            height: 12rem;
+            overflow: hidden;
+            /* Recorte Diagonal Moderno na ponta superior esquerda */
+            clip-path: polygon(0 18%, 100% 0, 100% 100%, 0 100%);
+            margin-top: 1rem;
+        }
+
+        .service-card-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .service-card:hover .service-card-img-wrapper img {
+            transform: scale(1.05);
+        }
+
+        .service-card-icon-circle {
+            position: absolute;
+            top: 2rem;
+            left: 2rem;
+            width: 3.5rem;
+            height: 3.5rem;
+            border-radius: 50%;
+            background-color: var(--color-primary);
+            border: 3px solid var(--color-bg-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 6px 15px rgba(211, 47, 47, 0.3);
+            z-index: 2;
+        }
+
+        .service-card-icon-circle svg {
+            width: 1.5rem;
+            height: 1.5rem;
+            fill: #fff;
+        }
+
+        .service-card-content {
+            padding: 2rem 1.75rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .service-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+            color: var(--color-secondary);
+        }
+
+        .service-card p {
+            color: var(--color-text-light);
+            font-size: 0.925rem;
+            line-height: 1.6;
+            margin-bottom: 1.75rem;
+        }
+
+        .service-card-link {
+            margin-top: auto;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-family: var(--font-title);
+            font-weight: 700;
+            font-size: 0.875rem;
+            color: var(--color-primary);
+        }
+
+        .service-card-link svg {
+            width: 1rem;
+            height: 1rem;
+            fill: var(--color-primary);
+            transition: var(--transition);
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px -15px rgba(15, 23, 42, 0.08);
+            border-color: rgba(211, 47, 47, 0.15);
+            background-color: var(--color-bg-white);
+        }
+
+        .service-card:hover .service-card-link svg {
+            transform: translateX(4px);
+        }
+
+        .services-bottom-cta {
+            margin-top: 4rem;
+        }
+
+        /* Methodology Section (Estilo Conztru Imagem 5) */
+        .methodology {
+            position: relative;
+            background-color: var(--color-bg-light);
+        }
+
+        .methodology-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 4.5rem;
+        }
+
+        .methodology-header h2 {
+            font-size: 2.75rem;
+            max-width: 600px;
+        }
+
+        .methodology-timeline {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 4rem;
+            position: relative;
+        }
+
+        .methodology-timeline::before {
+            content: '';
+            position: absolute;
+            top: 2rem;
+            left: 2rem;
+            right: 2rem;
+            height: 2px;
+            background-color: var(--color-border);
+            z-index: 0;
+        }
+
+        .timeline-step {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .timeline-step-indicator {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .timeline-number {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+            background-color: var(--color-secondary);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-title);
+            font-weight: 700;
+            font-size: 1.25rem;
+            box-shadow: 0 5px 15px rgba(15, 23, 42, 0.15);
+            transition: var(--transition);
+        }
+
+        .timeline-step:hover .timeline-number {
+            background: var(--gradient-fire);
+            box-shadow: 0 8px 20px rgba(211, 47, 47, 0.3);
+        }
+
+        .timeline-arrow {
+            width: 2.25rem;
+            height: 2.25rem;
+            border-radius: 50%;
+            background-color: var(--color-bg-white);
+            border: 2px solid var(--color-border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .timeline-arrow svg {
+            width: 1rem;
+            height: 1rem;
+            fill: var(--color-accent);
+        }
+
+        .timeline-step-content h3 {
+            font-size: 1.35rem;
+            margin-bottom: 0.5rem;
+            color: var(--color-secondary);
+        }
+
+        .timeline-step-content p {
+            color: var(--color-text-light);
+            font-size: 0.95rem;
+        }
+
+        /* FAQ Section */
+        .faq {
+            background-color: var(--color-bg-white);
+            border-top: 1px solid var(--color-border);
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid var(--color-border);
+            padding: 1.5rem 0;
+            cursor: pointer;
+        }
+
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .faq-question h3 {
+            font-size: 1.125rem;
+            font-weight: 600;
+        }
+
+        .faq-icon {
+            width: 1.5rem;
+            height: 1.5rem;
+            fill: var(--color-secondary);
+            transition: var(--transition);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s cubic-bezier(0, 1, 0, 1);
+            color: var(--color-text-light);
+            font-size: 0.95rem;
+            padding-top: 0;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
+            fill: var(--color-primary);
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 1000px;
+            padding-top: 1rem;
+            transition: max-height 0.3s cubic-bezier(1, 0, 1, 0);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: var(--gradient-dark);
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: radial-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+
+        .cta-container {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .cta-container h2 {
+            color: #fff;
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .cta-container p {
+            color: rgba(255, 255, 255, 0.75);
+            font-size: 1.15rem;
+            margin-bottom: 2.5rem;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #0b111e;
+            color: rgba(255, 255, 255, 0.6);
+            padding: 5rem 0 2rem 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr 1fr;
+            gap: 4rem;
+            margin-bottom: 4rem;
+        }
+
+        .footer-col h4 {
+            color: #fff;
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .footer-logo {
+            margin-bottom: 1.5rem;
+            display: inline-block;
+        }
+
+        .footer-logo img {
+            max-height: 8rem;
+            width: auto;
+            object-fit: contain;
+            background-color: #ffffff;
+            padding: 1rem;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .footer-desc {
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .footer-contact-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .footer-contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            font-size: 0.9rem;
+        }
+
+        .footer-contact-item svg {
+            width: 1.25rem;
+            height: 1.25rem;
+            fill: var(--color-primary);
+            flex-shrink: 0;
+            margin-top: 0.15rem;
+        }
+
+        .footer-links-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .footer-links-list a:hover {
+            color: #fff;
+            transform: translateX(4px);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            padding-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        /* Floating WhatsApp Button */
+        .float-whatsapp {
+            position: fixed;
+            width: 3.75rem;
+            height: 3.75rem;
+            bottom: 2rem;
+            right: 2rem;
+            background-color: #25D366;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3);
+            z-index: 999;
+            transition: var(--transition);
+            box-sizing: border-box;
+            line-height: 1;
+        }
+
+        .float-whatsapp:hover {
+            transform: scale(1.1) translateY(-3px);
+            background-color: #20BA5A;
+            box-shadow: 0 15px 30px rgba(37, 211, 102, 0.4);
+        }
+
+        .float-whatsapp svg {
+            width: 2rem;
+            height: 2rem;
+            fill: #fff;
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Mobile Menu */
+        .nav-menu.open {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 10.5rem;
+            left: 0;
+            width: 100%;
+            background-color: var(--color-bg-white);
+            padding: 2rem 1.5rem;
+            border-bottom: 1px solid var(--color-border);
+            box-shadow: 0 20px 30px -10px rgba(0,0,0,0.05);
+            gap: 1.5rem;
+        }
+
+        .nav-menu.open li {
+            width: 100%;
+            text-align: center;
+        }
+
+        .nav-toggle.active span:nth-child(1) {
+            transform: translateY(5px) rotate(45deg);
+        }
+
+        .nav-toggle.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .nav-toggle.active span:nth-child(3) {
+            transform: translateY(-5px) rotate(-45deg);
+        }
+
+        /* Animations */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        /* Media Queries */
+        @media (max-width: 1024px) {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+            }
+            .hero h1 {
+                font-size: 3rem;
+            }
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .top-bar {
+                display: none;
+            }
+            .nav-menu {
+                display: none;
+            }
+            .nav-toggle {
+                display: flex;
+            }
+            .hero-upper {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                text-align: center;
+            }
+            .hero-tagline {
+                margin: 0 auto 1.25rem auto;
+            }
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .hero-right-circle {
+                justify-content: center;
+            }
+            .hero-lower {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            .hero-image-wrapper {
+                aspect-ratio: 16/9;
+            }
+            .stats-block {
+                padding: 2rem;
+                gap: 1.5rem;
+            }
+            .stat-number {
+                font-size: 2.25rem;
+            }
+            .methodology-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1.5rem;
+            }
+            .methodology-timeline {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+            }
+            .methodology-timeline::before {
+                display: none;
+            }
+            .timeline-arrow {
+                display: none;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+            }
+            .cta-container h2 {
+                font-size: 2.25rem;
+            }
+            .section-header h2, .about-left-header h2, .methodology-header h2 {
+                font-size: 2rem;
+            }
+            .section-padding {
+                padding: 4.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-container">
+            <div class="top-bar-info">
+                <div class="top-bar-item">
+                    <!-- Phone Icon SVG -->
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="#D32F2F"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.59l2.2-2.21c.28-.26.36-.65.25-1C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.58c0-.57-.45-1.04-1-1.04z"/></svg>
+                    <span>(15) 99772-4080</span>
+                </div>
+                <div class="top-bar-item">
+                    <!-- Mail Icon SVG -->
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="#D32F2F"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                    <span>pcs-tiago@hotmail.com</span>
+                </div>
+            </div>
+            <div class="top-bar-socials">
+                <a href="https://www.instagram.com/itapeextintores/" target="_blank" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header / Nav -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img id="main-logo" src="./logo.png" alt="Itape Extintores" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <span style="display:none; font-family: var(--font-title); font-weight: 800; font-size: 1.5rem; color: var(--color-primary);">ITAPE EXTINTORES</span>
+            </a>
+            
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#solucoes" class="nav-link">Serviços</a></li>
+                    <li><a href="#diferenciais" class="nav-link">Diferenciais</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre Nós</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="https://wa.me/5515997724080?text=Olá!%20Achei%20seu%20contato%20pelo%20site.%20Gostaria%20de%20um%20orçamento%20para%20extintores/regularização." target="_blank" class="btn btn-primary btn-sm">Orçamento Rápido</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-toggle" id="nav-toggle" aria-label="Abrir Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        
+        <!-- Hero Section (Layout de 2 Colunas Integradas) -->
+        <section class="hero">
+            <div class="container">
+                
+                <div class="hero-columns">
+                    <!-- Left Column: Copy, CTAs & Pills -->
+                    <div class="hero-left">
+                        <span class="hero-tagline">Soluções Corporativas Especializadas</span>
+                        <h1>SEGURANÇA CONTRA INCÊNDIO E ENGENHARIA DE <span>CONFORMIDADE</span></h1>
+                        <p class="hero-desc">Venda, recarga de extintores, regularização de AVCB e assessoria SST em conformidade com as normas técnicas. Solução completa e agilidade local para sua empresa.</p>
+                        
+                        <div class="hero-ctas">
+                            <a href="https://wa.me/5515997724080?text=Olá!%20Achei%20seu%20contato%20pelo%20site%20e%20gostaria%20de%20um%20orçamento%20rápido." target="_blank" class="btn btn-primary">
+                                Falar com Especialista
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                    <path d="M12.004 2C6.48 2 2 6.48 2 12c0 1.73.44 3.36 1.21 4.79L2 22l5.37-1.39c1.37.74 2.93 1.17 4.63 1.17 5.52 0 10-4.48 10-10S17.52 2 12.004 2zm5.72 13.03c-.25.71-1.28 1.34-1.78 1.4-.44.05-.88.1-2.82-.67-2.48-.99-4.08-3.51-4.2-3.67-.12-.16-1.02-1.36-1.02-2.59 0-1.23.64-1.83.87-2.08.2-.23.53-.33.82-.33.1 0 .2 0 .28.01.25.01.37.02.53.4.2.48.69 1.68.75 1.8.06.12.1.27.02.43-.08.16-.12.27-.25.43-.12.16-.27.36-.38.48-.12.13-.25.27-.1.53.15.26.66 1.09 1.41 1.76.97.87 1.79 1.14 2.05 1.27.26.13.41.11.56-.05.15-.17.66-.77.83-1.03.17-.26.35-.22.59-.13.24.09 1.53.72 1.79.85.26.13.43.2.49.31.06.11.06.66-.19 1.37z"/>
+                                </svg>
+                            </a>
+                            <a href="#solucoes" class="btn btn-outline">Ver Serviços</a>
+                        </div>
+                        
+                        <div class="hero-pills">
+                            <span class="hero-pill">Venda &amp; Recargas</span>
+                            <span class="hero-pill">Projetos AVCB / CLCB</span>
+                            <span class="hero-pill">Treinamento de Brigadas</span>
+                            <span class="hero-pill">Segurança do Trabalho / e-Social</span>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Image and Stats Panel -->
+                    <div class="hero-right">
+                        <div class="hero-image-card">
+                            <img src="./hero-image.png" alt="Equipamentos de Segurança Contra Incêndio">
+                            <div class="hero-image-overlay"></div>
+                            
+                            <div class="hero-img-badge">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="#EA580C"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h-2v-2h4v8zm0-10h-2V5h2v2z"/></svg>
+                                Orçamento Rápido em 2h
+                            </div>
+                        </div>
+                        
+                        <div class="hero-stats-panel">
+                            <div class="hero-stat-box">
+                                <span class="h-stat-num">15+</span>
+                                <span class="h-stat-txt">Anos de Experiência</span>
+                            </div>
+                            <div class="hero-stat-box">
+                                <span class="h-stat-num">100%</span>
+                                <span class="h-stat-txt">Equipamentos Homologados</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Quem Somos Section (Estilo Conztru Imagem 3) -->
+        <section class="section-padding" id="sobre">
+            <div class="container about-grid">
+                
+                <!-- Left: Headline and image with tag overlay -->
+                <div class="about-left">
+                    <div class="about-left-header">
+                        <span class="section-subtitle">Quem Somos</span>
+                        <h2>CUIDAMOS DA SUA SEGURANÇA COM RESPONSABILIDADE</h2>
+                        <p>A Itape Extintores é especializada em soluções completas de prevenção e combate a incêndios e saúde ocupacional em Itapetininga e região.</p>
+                    </div>
+
+                    <div class="about-left-visual">
+                        <img src="./about-image.png" alt="Equipamentos Técnicos de Combate a Incêndio instalados">
+                        <span class="about-tag-overlay">Atuação Regional Rápida</span>
+                    </div>
+                </div>
+
+                <!-- Right: Dark Card with core value statement and CTAs -->
+                <div class="about-right">
+                    <div class="about-right-card">
+                        <h3>COMPROMISSO EXCLUSIVO COM A CONFORMIDADE LEGAL</h3>
+                        <p>Atuamos com projetos técnicos robustos, venda e manutenção de extintores, regularizações completas junto ao Corpo de Bombeiros (AVCB/CLCB) e exames/laudos exigidos no e-Social. Oferecemos segurança jurídica e operacional para que sua edificação comercial, condomínio ou indústria cumpra todas as exigências das seguradoras e fiscais estaduais.</p>
+                        
+                        <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                            <a href="https://wa.me/5515997724080?text=Olá!%20Achei%20seu%20contato%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20as%20soluções." target="_blank" class="btn btn-secondary">
+                                Conhecer Soluções
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12.004 2C6.48 2 2 6.48 2 12c0 1.73.44 3.36 1.21 4.79L2 22l5.37-1.39c1.37.74 2.93 1.17 4.63 1.17 5.52 0 10-4.48 10-10S17.52 2 12.004 2zm5.72 13.03c-.25.71-1.28 1.34-1.78 1.4-.44.05-.88.1-2.82-.67-2.48-.99-4.08-3.51-4.2-3.67-.12-.16-1.02-1.36-1.02-2.59 0-1.23.64-1.83.87-2.08.2-.23.53-.33.82-.33.1 0 .2 0 .28.01.25.01.37.02.53.4.2.48.69 1.68.75 1.8.06.12.1.27.02.43-.08.16-.12.27-.25.43-.12.16-.27.36-.38.48-.12.13-.25.27-.1.53.15.26.66 1.09 1.41 1.76.97.87 1.79 1.14 2.05 1.27.26.13.41.11.56-.05.15-.17.66-.77.83-1.03.17-.26.35-.22.59-.13.24.09 1.53.72 1.79.85.26.13.43.2.49.31.06.11.06.66-.19 1.37z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Services Section (Estilo Conztru Imagem 4) -->
+        <section class="section-padding services" id="solucoes">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Nossos Serviços</span>
+                    <h2>SERVIÇOS SOB MEDIDA PARA SUA EMPRESA</h2>
+                    <p>Abaixo estão as nossas 4 principais vertentes de soluções técnicas e engenharia de prevenção de incêndio.</p>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card">
+                        <div class="service-card-img-wrapper">
+                            <img src="./venda-recarga.png" alt="Equipamentos e Recargas de Extintores">
+                            <div class="service-card-icon-circle">
+                                <!-- Extintor/Fogo SVG -->
+                                <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 16h-2v-2h2v2zm0-4h-2V7h2v7z"/></svg>
+                            </div>
+                        </div>
+                        <div class="service-card-content">
+                            <h3>Equipamentos &amp; Recarga</h3>
+                            <p>Fornecimento de extintores de incêndio novos (Água, Pó e CO2) com selos de conformidade Inmetro e recarga periódica programada com fornecimento de cilindros reserva.</p>
+                            <a href="https://wa.me/5515997724080?text=Olá!%20Gostaria%20de%20solicitar%20recarga%20de%20extintores%20ou%20equipamentos%20novos." target="_blank" class="service-card-link">
+                                Solicitar Orçamento
+                                <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card">
+                        <div class="service-card-img-wrapper">
+                            <img src="./engenharia-avcb.png" alt="Projetos de AVCB e Bombeiros">
+                            <div class="service-card-icon-circle">
+                                <!-- Shield/Fire SVG -->
+                                <svg viewBox="0 0 24 24"><path d="M12 2c-.17 0-.34.03-.5.09L5 4.58C3.86 5.04 3 6.13 3 7.37V13c0 5.55 3.86 10.92 9.54 11.95.3.05.62.05.92 0C19.14 23.92 23 18.55 23 13V7.37c0-1.24-.86-2.33-2-2.79l-6.5-2.49C14.34 2.03 14.17 2 14 2zm0 18.93c-3.9 1.15-7-3.91-7-8.93V7.37L12 5.07l7 2.3v3.56c0 5.02-3.1 10.08-7 10.08z"/></svg>
+                            </div>
+                        </div>
+                        <div class="service-card-content">
+                            <h3>Engenharia &amp; AVCB</h3>
+                            <p>Elaboração de projetos técnicos, renovação e emissão de alvarás AVCB / CLCB junto ao Corpo de Bombeiros, laudos de para-raios (SPDA) e testes de estanqueidade de gás.</p>
+                            <a href="https://wa.me/5515997724080?text=Olá!%20Preciso%20de%20consultoria/orçamento%20para%20regularização%20de%20AVCB/CLCB%20da%20minha%20empresa." target="_blank" class="service-card-link">
+                                Consultar Engenharia
+                                <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card">
+                        <div class="service-card-img-wrapper">
+                            <img src="./treinamento-brigada.png" alt="Treinamento de Brigada de Incêndio">
+                            <div class="service-card-icon-circle">
+                                <!-- People SVG -->
+                                <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                            </div>
+                        </div>
+                        <div class="service-card-content">
+                            <h3>Treinamento de Brigada</h3>
+                            <p>Cursos de formação e reciclagem para brigadas de incêndio prediais, comerciais e industriais. Treinamentos teóricos e práticos com certificações válidas.</p>
+                            <a href="https://wa.me/5515997724080?text=Olá!%20Gostaria%20de%20saber%20valores%20para%20treinamento/reciclagem%20de%20brigada%20de%20incêndio." target="_blank" class="service-card-link">
+                                Agendar Curso
+                                <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="service-card">
+                        <div class="service-card-img-wrapper">
+                            <img src="./seguranca-trabalho.png" alt="Segurança do Trabalho SST">
+                            <div class="service-card-icon-circle">
+                                <!-- PGR/Document SVG -->
+                                <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                            </div>
+                        </div>
+                        <div class="service-card-content">
+                            <h3>Segurança do Trabalho</h3>
+                            <p>Elaboração de PGR, PCMSO, laudos de ruído, insalubridade e periculosidade. Assessoria especializada para gestão e envio de eventos SST para o e-Social.</p>
+                            <a href="https://wa.me/5515997724080?text=Olá!%20Gostaria%20de%20um%20atendimento%20para%20adequação/laudos%20de%20Segurança%20do%20Trabalho." target="_blank" class="service-card-link">
+                                Consultar SST
+                                <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services-bottom-cta text-center">
+                    <a href="https://wa.me/5515997724080?text=Olá!%20Achei%20seu%20contato%20pelo%20site%20e%20gostaria%20de%20realizar%20um%20orçamento." target="_blank" class="btn btn-primary">
+                        Fazer Orçamento de Serviços
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12.004 2C6.48 2 2 6.48 2 12c0 1.73.44 3.36 1.21 4.79L2 22l5.37-1.39c1.37.74 2.93 1.17 4.63 1.17 5.52 0 10-4.48 10-10S17.52 2 12.004 2zm5.72 13.03c-.25.71-1.28 1.34-1.78 1.4-.44.05-.88.1-2.82-.67-2.48-.99-4.08-3.51-4.2-3.67-.12-.16-1.02-1.36-1.02-2.59 0-1.23.64-1.83.87-2.08.2-.23.53-.33.82-.33.1 0 .2 0 .28.01.25.01.37.02.53.4.2.48.69 1.68.75 1.8.06.12.1.27.02.43-.08.16-.12.27-.25.43-.12.16-.27.36-.38.48-.12.13-.25.27-.1.53.15.26.66 1.09 1.41 1.76.97.87 1.79 1.14 2.05 1.27.26.13.41.11.56-.05.15-.17.66-.77.83-1.03.17-.26.35-.22.59-.13.24.09 1.53.72 1.79.85.26.13.43.2.49.31.06.11.06.66-.19 1.37z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Methodology Section (Estilo Conztru Imagem 5) -->
+        <section class="section-padding methodology" id="diferenciais">
+            <div class="container">
+                <div class="methodology-header">
+                    <div>
+                        <span class="section-subtitle">Nossa Metodologia</span>
+                        <h2>COMO GARANTIMOS A REGULARIZAÇÃO DA SUA EMPRESA</h2>
+                    </div>
+                    <a href="https://wa.me/5515997724080?text=Olá!%20Gostaria%20de%20agendar%20uma%20vistoria%20técnica%20no%20meu%20estabelecimento." target="_blank" class="btn btn-outline">Agendar Vistoria</a>
+                </div>
+
+                <div class="methodology-timeline">
+                    <!-- Step 1 -->
+                    <div class="timeline-step">
+                        <div class="timeline-step-indicator">
+                            <span class="timeline-number">01</span>
+                            <span class="timeline-arrow">
+                                <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+                            </span>
+                        </div>
+                        <div class="timeline-step-content">
+                            <h3>Mapeamento da Demanda</h3>
+                            <p>Análise da carga de incêndio, número de pavimentos e situação atual das licenças (AVCB/CLCB) de forma rápida pelo WhatsApp.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="timeline-step">
+                        <div class="timeline-step-indicator">
+                            <span class="timeline-number">02</span>
+                            <span class="timeline-arrow">
+                                <svg viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+                            </span>
+                        </div>
+                        <div class="timeline-step-content">
+                            <h3>Coleta &amp; Vistoria Técnica</h3>
+                            <p>Retirada técnica dos cilindros com substituição por extintores reserva provisórios. Engenharia executa a vistoria no local para projetos e laudos.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="timeline-step">
+                        <div class="timeline-step-indicator">
+                            <span class="timeline-number">03</span>
+                        </div>
+                        <div class="timeline-step-content">
+                            <h3>Instalação &amp; Licenciamento</h3>
+                            <p>Devolução e reinstalação técnica dos extintores no local e protocolo do laudo técnico final para liberação do alvará dos bombeiros.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section-padding faq" id="faq">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Dúvidas Comuns</span>
+                    <h2>PERGUNTAS FREQUENTES SOBRE PREVENÇÃO E LICENÇAS</h2>
+                </div>
+
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Qual a periodicidade de recarga e manutenção dos extintores?</h3>
+                            <svg class="faq-icon" viewBox="0 0 24 24" width="24" height="24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Conforme normas vigentes do Inmetro, a recarga e manutenção preventiva de extintores de incêndio portáteis deve ser efetuada anualmente (12 meses). O ensaio hidrostático (teste de pressão no casco para verificar microfissuras) é obrigatório a cada 5 anos, ou imediatamente caso o cilindro sofra danos físicos.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Minha edificação comercial realmente precisa de AVCB ou CLCB?</h3>
+                            <svg class="faq-icon" viewBox="0 0 24 24" width="24" height="24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Sim. Conforme o regulamento de segurança do Corpo de Bombeiros, todo estabelecimento comercial, industrial, condomínio ou espaço institucional multifamiliar precisa da licença (AVCB para edificações acima de 750m² ou de alta complexidade, e CLCB para edificações menores de baixo risco). A ausência desse documento invalida seguros contra sinistros e gera pesadas multas.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Os extintores reserva fornecidos são cobrados à parte?</h3>
+                            <svg class="faq-icon" viewBox="0 0 24 24" width="24" height="24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Não. A Itape Extintores fornece os cilindros reservas necessários para a segurança provisória do seu estabelecimento sem custos adicionais de aluguel durante o processo de manutenção e recarga dos seus equipamentos originais.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Quais empresas são obrigadas a enviar eventos de SST no e-Social?</h3>
+                            <svg class="faq-icon" viewBox="0 0 24 24" width="24" height="24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Toda empresa que possua um ou mais trabalhadores registrados em regime CLT deve enviar os eventos de Saúde e Segurança do Trabalho (SST) para o e-Social. Isso inclui o envio das tabelas S-2210 (Comunicação de Acidente de Trabalho), S-2220 (Monitoramento da Saúde do Trabalhador - ASO) e S-2240 (Condições Ambientais do Trabalho - PGR/LTCAT).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section-padding cta-section">
+            <div class="container cta-container">
+                <h2>NÃO COLOQUE SUA OPERAÇÃO EM RISCO</h2>
+                <p>Garanta a conformidade técnica dos seus equipamentos de combate, laudos do Corpo de Bombeiros e documentação de SST com especialistas locais de confiança.</p>
+                <a href="https://wa.me/5515997724080?text=Olá!%20Achei%20seu%20contato%20pelo%20site%20e%20gostaria%20de%20iniciar%20uma%20cotação." target="_blank" class="btn btn-primary">Falar com Tiago no WhatsApp</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <img src="./logo.png" alt="Itape Extintores" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <span style="display:none; font-family: var(--font-title); font-weight: 800; font-size: 1.5rem; color: var(--color-primary);">ITAPE EXTINTORES</span>
+                </div>
+                <p class="footer-desc">Empresa técnica e consultiva especializada em sistemas de combate e prevenção de incêndios, recarga de extintores e laudos de Saúde e Segurança do Trabalho.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Navegação</h4>
+                <ul class="footer-links-list">
+                    <li><a href="#solucoes">Nossos Serviços</a></li>
+                    <li><a href="#diferenciais">Diferenciais</a></li>
+                    <li><a href="#sobre">Fale Conosco</a></li>
+                    <li><a href="#faq">Perguntas Frequentes</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contato</h4>
+                <ul class="footer-contact-list">
+                    <li class="footer-contact-item">
+                        <!-- Location Pin Icon -->
+                        <svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                        <span>Rua Dino José da Silva, 742, Vila La Brunetti, Itapetininga, SP - CEP 18205-761</span>
+                    </li>
+                    <li class="footer-contact-item">
+                        <!-- Phone Icon -->
+                        <svg viewBox="0 0 24 24" width="20" height="20"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.59l2.2-2.21c.28-.26.36-.65.25-1C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.58c0-.57-.45-1.04-1-1.04z"/></svg>
+                        <span>Tiago: (15) 99772-4080</span>
+                    </li>
+                    <li class="footer-contact-item">
+                        <!-- Mail Icon -->
+                        <svg viewBox="0 0 24 24" width="20" height="20"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                        <span>pcs-tiago@hotmail.com</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Itape Extintores. Todos os direitos reservados.</p>
+            <p>Feito no Vértice Client OS</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/5515997724080?text=Olá!%20Achei%20seu%20contato%20pelo%20site.%20Gostaria%20de%20um%20orçamento%20para%20extintores/regularização." class="float-whatsapp" target="_blank" aria-label="Fale conosco no WhatsApp">
+        <svg viewBox="0 0 24 24">
+            <path d="M12.004 2C6.48 2 2 6.48 2 12c0 1.73.44 3.36 1.21 4.79L2 22l5.37-1.39c1.37.74 2.93 1.17 4.63 1.17 5.52 0 10-4.48 10-10S17.52 2 12.004 2zm5.72 13.03c-.25.71-1.28 1.34-1.78 1.4-.44.05-.88.1-2.82-.67-2.48-.99-4.08-3.51-4.2-3.67-.12-.16-1.02-1.36-1.02-2.59 0-1.23.64-1.83.87-2.08.2-.23.53-.33.82-.33.1 0 .2 0 .28.01.25.01.37.02.53.4.2.48.69 1.68.75 1.8.06.12.1.27.02.43-.08.16-.12.27-.25.43-.12.16-.27.36-.38.48-.12.13-.25.27-.1.53.15.26.66 1.09 1.41 1.76.97.87 1.79 1.14 2.05 1.27.26.13.41.11.56-.05.15-.17.66-.77.83-1.03.17-.26.35-.22.59-.13.24.09 1.53.72 1.79.85.26.13.43.2.49.31.06.11.06.66-.19 1.37z"/>
+        </svg>
+    </a>
+
+    <!-- Vanilla Javascript -->
+    <script>
+        // Scroll header style change
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile Nav Toggle
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        navToggle.addEventListener('click', () => {
+            navToggle.classList.toggle('active');
+            navMenu.classList.toggle('open');
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navToggle.classList.remove('active');
+                navMenu.classList.remove('open');
+            });
+        });
+
+        // FAQ Accordion
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            item.addEventListener('click', () => {
+                // If it's already active, deactivate it
+                if (item.classList.contains('active')) {
+                    item.classList.remove('active');
+                } else {
+                    // Deactivate all others
+                    faqItems.forEach(otherItem => otherItem.classList.remove('active'));
+                    // Activate current
+                    item.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

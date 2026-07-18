@@ -9,6 +9,16 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://www.itapeextintores.com.br/">
 
+    <!-- Google Tag (gtag.js) - Google Ads -->
+    <!-- [CONFIGURAÇÃO]: Substitua AW-ID_DA_CONTA pelo ID real da sua conta (ex: AW-123456789) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-ID_DA_CONTA"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-ID_DA_CONTA');
+    </script>
+
     <!-- Favicons -->
     <link rel="icon" type="image/png" href="./favicon.png">
     <link rel="shortcut icon" type="image/png" href="./favicon.png">
@@ -1705,6 +1715,19 @@
                     faqItems.forEach(otherItem => otherItem.classList.remove('active'));
                     // Activate current
                     item.classList.add('active');
+                }
+            });
+        });
+
+        // Rastreamento automático de cliques nos links do WhatsApp para o Google Ads
+        // [CONFIGURAÇÃO]: Substitua "AW-ID_DA_CONTA/LABEL_CONVERSAO" pela tag de conversão do evento criada no Google Ads (ex: AW-123456789/xYz123456)
+        document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
+            link.addEventListener('click', () => {
+                if (typeof gtag === 'function') {
+                    gtag('event', 'conversion', {
+                        'send_to': 'AW-ID_DA_CONTA/LABEL_CONVERSAO'
+                    });
+                    console.log('Conversão de clique no WhatsApp enviada ao Google Ads.');
                 }
             });
         });

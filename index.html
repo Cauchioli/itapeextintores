@@ -1719,12 +1719,11 @@
         });
 
         // Rastreamento automático de cliques nos links do WhatsApp para o Google Ads
-        // [CONFIGURAÇÃO]: Substitua "LABEL_CONVERSAO" pelo código alfanumérico gerado no Google Ads (ex: xYz123456)
         document.querySelectorAll('a[href*="wa.me"]').forEach(link => {
             link.addEventListener('click', () => {
                 if (typeof gtag === 'function') {
                     gtag('event', 'conversion', {
-                        'send_to': 'AW-18273618308/LABEL_CONVERSAO'
+                        'send_to': 'AW-18273618308/3Zk6CM6U2tIcEISTxYlE'
                     });
                     console.log('Conversão de clique no WhatsApp enviada ao Google Ads.');
                 }
